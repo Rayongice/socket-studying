@@ -17,7 +17,7 @@ while True:
     if not data:                  #Check
         break
     data = data.decode('utf-8')    #Decoding data from receving
-    tcp_cli_sock.send("I'm walle you sended:" + data).encode('utf-8'))  #Response to client
+    tcp_cli_sock.send(("I'm walle you sended:" + data).encode('utf-8'))  #Response to client
     
 tcp_cli_sock.close()  #Close client
 tcp_ser_sock.close()  #Close Server
